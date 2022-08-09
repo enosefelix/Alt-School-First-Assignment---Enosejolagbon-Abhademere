@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav id="navlogin">
+    <ul class="nav">
+      <li><h2>Login</h2></li>
+      <div class="nav-links">   
+      <li class="about"><a href="/index.html">About</a></li>
+      <li class="contact"><a href="/index.html#contact">Contact</a></li>      
+      <li class="register"><a href="/pages/register.html">Register</a></li>   
+      </div> 
+    </ul>
+  </nav>
+
+    <div class="contain">
+      <div class="left">
+        <img src="/images/illustration-mockups.svg">
+      </div>
+        <form action="./index.html">
+            <h2>Login</h2>
+        
+            <div class="label">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Username" required>        
+            </div>
+            <div class="label">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>        
+            </div>
+            <button class="log">Sign-in</button>
+        </form>
+    </div>
+</body>
+
+</html>
